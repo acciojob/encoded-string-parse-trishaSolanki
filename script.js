@@ -1,5 +1,5 @@
 const parseCode = (str) => {
-   const [firstName, lastName, id] = str.split('000').map(part => part.replace(/^0+/, ''));
+   const [firstName, lastName, id] = str.split('000').map(str => str.replace(/^0+/, ''));
     return {
         firstName: firstName || '',
         lastName: lastName || '',
