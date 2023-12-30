@@ -1,6 +1,6 @@
 const parseCode = (str) => {
   // your code here
-	const[firstName, lastName, id] = str.split(000).filter(boolean);
+	const[firstName, lastName, id] = str.split('000').filter(Boolean);
 	 return {
         firstName: firstName,
         lastName: lastName,
@@ -11,3 +11,4 @@ const parseCode = (str) => {
 // Do not change the code below
 const str = prompt("Enter str: ");
 alert(JSON.stringify(parseCode(str)));
+
